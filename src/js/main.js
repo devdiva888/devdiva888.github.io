@@ -1,5 +1,3 @@
-alert('lol');
-
 let currentSlide = 0;
 const icons =
 document.querySelectorAll('.carousel i')
