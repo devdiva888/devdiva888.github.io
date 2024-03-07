@@ -1,9 +1,11 @@
-h1, p {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     background-color: #f0f7ff;
     color: #333;
-    margin: 0;
-    padding: 0;
+}
+
+h1 {
+    color: #0077cc;
 }
 
 ul {
@@ -15,4 +17,27 @@ ul {
 li {
     display: inline-block;
     margin-right: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+   text-align: center;
+}
+
+.carousel i {
+    font-size: 5em;
+    color: #007bff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.carousel i:hover {
+    transform: scale(1.2);
 }
