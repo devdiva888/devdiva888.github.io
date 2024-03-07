@@ -3,7 +3,7 @@ const icons = [
     'fa-brands fa-html5',
     'fa-brands fa-css3-alt',
     'fa-brands fa-js',
-    'fa-brands fa-square-git'
+    'fa-brands fa-square-git',
     'fa-brands fa-github'
 ];
 
