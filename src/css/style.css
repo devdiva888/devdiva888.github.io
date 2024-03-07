@@ -1,11 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f7ff;
-    color: #333;
+    font-family: "Nunito", sans-serif;
+    background-color: #ebf5ff;
+    color: #5a9bd4;
 }
 
 h1 {
-    color: #0077cc;
+    color: #1a456e;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
 }
 
 ul {
@@ -41,3 +44,4 @@ li {
 .carousel i:hover {
     transform: scale(1.2);
 }
+
