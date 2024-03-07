@@ -11,6 +11,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
