@@ -53,3 +53,8 @@ li {
     transform: scale(1.8);
 }
 
+#about {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
