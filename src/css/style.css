@@ -8,7 +8,7 @@ h1 {
     color: #1a456e;
     font-size: xx-large;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
 }
 
 p {
@@ -19,6 +19,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 li {
