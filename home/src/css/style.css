@@ -29,3 +29,23 @@ li {
     color: black;
 }
 
+.hero {
+    background-image: url('/home/src/IMG_9533.heic');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: #1a456e;
+}
