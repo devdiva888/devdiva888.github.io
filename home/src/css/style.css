@@ -9,7 +9,10 @@ h1 {
     color: #1a456e;
     font-size: xx-large;
     font-weight: bold;
-    text-align: start;
+    text-align: center;
+}
+h4 {
+    text-align: center;
 }
 
 p {
@@ -30,12 +33,13 @@ li {
 }
 
 .hero {
-    background-image: url("/home/src/IMG_9533.heic");
+    background-image: url('/IMG_9533.png');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 100px 0;
+    opacity: 0.7;
 }
 
 .container {
@@ -46,6 +50,6 @@ li {
 .content {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
     color: #1a456e;
+    opacity: 0.8;
 }
