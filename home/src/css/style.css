@@ -30,7 +30,7 @@ li {
 }
 
 .hero {
-    background-image: url('/home/src/IMG_9533.heic');
+    background-image: url("/home/src/IMG_9533.heic");
     background-size: cover;
     background-position: center;
     color: white;
