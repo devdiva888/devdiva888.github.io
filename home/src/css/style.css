@@ -29,32 +29,3 @@ li {
     color: black;
 }
 
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-.carousel {
-   text-align: center;
-}
-
-.carousel i {
-    font-size: 5em;
-    color: #007bff;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-    margin-right: 50px;
-}
-
-
-.carousel i:hover {
-    transform: scale(1.8);
-}
-
-#about {
-    width: 300px;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
