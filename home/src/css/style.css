@@ -1,66 +1,170 @@
 body {
-    font-family: "Nunito", sans-serif;
-    background-color: #ebf5ff;
-    color: #5a9bd4;
-    background-image: url('/src/pexels-madison-inouye-1831234.jpg');
+   
+}
+
+header {
+    
 }
 
 h1 {
-    color: #1a456e;
-    font-size: xx-large;
-    font-weight: bold;
+    color: #222;
     text-align: center;
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 h4 {
+    color: #222;
     text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    margin-top: 10px;
 }
 
 p {
     text-align: center;
 }
 
-ul {
+
+.menu ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 16px;
+    margin: 15px;
     text-align: center;
+    border-top: 1px solid #EEE9E8;
+    border-bottom: 1px solid #EEE9E8;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
-li {
-    display: inline-block;
-    margin-right: 10px;
-    color: black;
+li a {
+    color: #222;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ccc;
 }
 
 .hero {
-    background-image: url('/IMG_9533.png');
-    background-size: cover;
+    position: relative; /* Ensure the parent is positioned */
+    background: url('/IMG_9533.png') lightgray 0px 0px / cover no-repeat;
+    /* background-size: cover; is redundant due to / cover in the background shorthand */
+    opacity: 1;
     background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-    opacity: 0.7;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    height: 40vh; /* Set a height to the hero to ensure there's space for the container */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: absolute; /* Use absolute positioning within the relative parent */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 220px;
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    background-color: rgba(249, 249, 249, 0.85);
+    box-sizing: border-box;
+    box-shadow: 4px rgba(249, 249, 249, 0.85);
+    ;
 }
 
 .content {
-    background-color: white;
-    padding: 20px;
-    color: #1a456e;
-    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    
+   
 }
+
+.content h2 {
+    color: #222;
+    text-align: center;
+    ont-family: "Libre Baskerville";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.content p {
+    color: #222;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 200% */
+    letter-spacing: 0.7px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-flex;
+    height: 47px;
+    padding: 1px 36px 1px 34px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #222;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ccc;
+}
+
+.highlight-header {
+    color: #222;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px #222;
+}
+
 
 .highlights {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #ccc
+    background-color: #f9f9f9
     
   }
   
