@@ -1,11 +1,3 @@
-body {
-   
-}
-
-header {
-    
-}
-
 h1 {
     color: #222;
     text-align: center;
@@ -98,7 +90,7 @@ li a:hover {
 .content h2 {
     color: #222;
     text-align: center;
-    ont-family: "Libre Baskerville";
+    font-family: "Libre Baskerville";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
