@@ -88,6 +88,10 @@ li a:hover {
 
 }
 
+.dropdownmenu-items li a:hover {
+    color: #ccc;
+}
+
 .close-button {
     display: none;
     border: none;
