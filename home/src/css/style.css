@@ -145,7 +145,7 @@ li a:hover {
     background-color: #ccc;
 }
 
-.highlight-header {
+.highlight-header  {
     color: #222;
     text-align: center;
     font-family: "Libre Baskerville";
@@ -155,7 +155,8 @@ li a:hover {
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
-    border-bottom: 1px #222;
+    border-top: 1px solid #EEE9E8;
+    border-bottom: 1px solid #EEE9E8;
 }
 
 
@@ -164,8 +165,8 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #f9f9f9
-    
+    background-color: #f9f9f9;
+    margin-top: 15px;
   }
   
   .highlight-item {
@@ -205,8 +206,11 @@ li a:hover {
     color: #FFFFFF; /* Change as needed */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     text-decoration: none; /* Removes underline from links */
-    font-size: 20px; /* Adjust based on your design */
-  }
+    font-size: 15px; /* Adjust based on your design */
+    font-family: "Libre Baskerville";
+    text-transform: uppercase;
+     }
+
   
   .highlight-link:hover {
     background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
@@ -228,7 +232,7 @@ li a:hover {
   }
 
   footer {
-    background-color: #ccc;
+    background-color: #f9f9f9;
     margin-top: 30px;
   }
 
@@ -238,10 +242,23 @@ li a:hover {
     align-items: center;
   }
 
+  footer p {
+    font-family: Poppins;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .icons a {
+    display: flex;
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 25px;
+  }
+
   .icons {
     display: flex;
   }
 
-  .icons i {
-    margin-right: 10px;
-  }
+  
