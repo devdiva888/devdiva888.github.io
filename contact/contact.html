@@ -24,6 +24,16 @@
             <li><a href="/contact/contact.html">Contact</a></li>
           </ul>
         </nav>
+        <div class="dropdown-menu">
+          <ul class="dropdownmenu-items">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/blog/blog.html">Blog</a></li>
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+        <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+        
+      </div>
         <button class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></button>
         <footer>
           <div class="footer-content">
@@ -41,13 +51,33 @@
 
         <script>
           function toggleDropdown() {
-            var x = document.querySelector(".menu-items");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
+            var x = document.querySelector(".dropdownmenu-items");
+            x.classList.toggle("show");
           }
+
+          document.querySelector(".close-button").addEventListener("click", function() {
+            document.querySelector(".dropdownmenu-items").classList.remove("show");
+          });
+
+          function toggleDropdown() {
+  var dropdown = document.querySelector(".dropdownmenu-items");
+  var closeButton = document.querySelector(".close-button");
+  
+  dropdown.classList.toggle("show");
+  
+  // Toggle close button visibility based on dropdown menu's visibility
+  if (dropdown.classList.contains("show")) {
+    closeButton.style.display = "block"; // Show close button
+  } else {
+    closeButton.style.display = "none"; // Hide close button
+  }
+}
+
+document.querySelector(".close-button").addEventListener("click", function() {
+  var dropdown = document.querySelector(".dropdownmenu-items");
+  dropdown.classList.remove("show");
+  this.style.display = "none"; // Hide close button
+});
 
 
       </script>
