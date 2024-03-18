@@ -22,6 +22,14 @@ h4 {
     margin-top: 10px;
 }
 
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
 p {
     text-align: center;
 }
@@ -37,6 +45,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 60px;
+    margin-bottom: 0;
 }
 
 li a {
@@ -66,6 +75,7 @@ main h2 {
     line-height: 34.2px; /* 190% */
     letter-spacing: 3px;
     text-transform: uppercase;
+    padding-top: 150px;
 }
 
 main h3 {
@@ -107,7 +117,10 @@ img {
 }
 */
 
-main {
+
+
+main,
+section {
     display: flex;
     flex-direction: column; /* Stacks children vertically */
     align-items: center;
@@ -117,7 +130,8 @@ main {
     padding: 20px;
 }
 
-main p {
+main p,
+section p {
     color: #444;
     font-family: "Source Serif Pro";
     font-size: 14px;
@@ -128,7 +142,7 @@ main p {
     text-align: left;
 }
 
-img {
+.tia-photo img {
     width: 300px; /* or any specific size */
     display: block;
     margin: auto;
@@ -177,6 +191,9 @@ img {
     display: flex;
     max-width: 600px;
     align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
   }
 
   .image-container img {
@@ -184,9 +201,18 @@ img {
     height: 200px;
   }
 
+  @media screen and (max-width: 500px) {
+    .image-container img {
+        height: 150px;
+        width: 150px;
+    }
+  }
+
 footer {
     background-color: #f9f9f9;
     margin-top: 30px;
+    bottom: 0;
+    position: static;
   }
 
   .footer-content {

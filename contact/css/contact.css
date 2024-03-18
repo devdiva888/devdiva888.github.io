@@ -56,6 +56,32 @@ li a:hover {
     color: #ccc;
 }
 
+.dropdown-btn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    font-size: large;
+    border-top: 1px solid #EEE9E8;
+    border-bottom: 1px solid #EEE9E8;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .menu ul {
+        display: none;
+        width: 100%;
+    }
+
+    .dropdown-btn {
+        display: block;
+    }
+}
+
 
 footer {
     background-color: #f9f9f9;

@@ -17,14 +17,14 @@
         <h4>my glow up lab</h4>
     </header>
         <nav class="menu">
-          <ul>
+          <ul class="menu-items">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/blog/blog.html">Blog</a></li>
             <li><a href="/about/about.html">About</a></li>
             <li><a href="/contact/contact.html">Contact</a></li>
           </ul>
         </nav>
-
+        <button class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></button>
         <footer>
           <div class="footer-content">
             <div class="icons">
@@ -37,5 +37,20 @@
           </div>
         </div>
         </footer>
+
+
+        <script>
+          function toggleDropdown() {
+            var x = document.querySelector(".menu-items");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+
+
+      </script>
+
 </body>
 </html>
