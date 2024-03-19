@@ -283,12 +283,10 @@ section p {
         width: 150px;
     }
   }
-
+/*
 footer {
     background-color: #f9f9f9;
     margin-top: 30px;
-    bottom: 0;
-    position: static;
   }
 
   .footer-content {
@@ -315,3 +313,37 @@ footer {
   .icons {
     display: flex;
   }
+  */
+
+  footer {
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    margin-bottom: 0%;
+    padding-bottom: 5px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-family: Poppins;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .icons a {
+    display: flex;
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 25px;
+  }
+
+  .icons {
+    display: flex;
+  }
+
