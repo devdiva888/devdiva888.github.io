@@ -26,6 +26,15 @@
           </ul>
         </nav>
   </div>
+  <div class="dropdown-menu">
+    <ul class="dropdownmenu-items">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/blog/blog.html">Blog</a></li>
+    <li><a href="/about/about.html">About</a></li>
+    <li><a href="/contact/contact.html">Contact</a></li>
+  </ul>
+</div>
+  <button class="dropdown-btn" onclick="toggleDropdown()"><i class="fa-solid fa-bars"></i></button>
         <main>
           <h2>About</h2>
           <h3>Tia Katariina</h3>
@@ -78,5 +87,32 @@
           </div>
         </div>
         </footer>
+
+        <script>
+          
+          document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.querySelector(".dropdownmenu-items");
+    var toggleButton = document.querySelector(".dropdown-btn");
+
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+        dropdown.classList.toggle("show");
+    }
+
+    // Event listener for the dropdown button
+    toggleButton.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent click event from propagating to the document
+        toggleDropdown();
+    });
+
+    // Close the dropdown if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
+});
+      </script>
+      
 </body>
 </html>

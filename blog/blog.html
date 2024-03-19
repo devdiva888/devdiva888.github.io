@@ -37,5 +37,32 @@
           </div>
         </div>
         </footer>
+
+        <script>
+          
+          document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.querySelector(".dropdownmenu-items");
+    var toggleButton = document.querySelector(".dropdown-btn");
+
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+        dropdown.classList.toggle("show");
+    }
+
+    // Event listener for the dropdown button
+    toggleButton.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent click event from propagating to the document
+        toggleDropdown();
+    });
+
+    // Close the dropdown if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
+});
+      </script>
+      
 </body>
 </html>
