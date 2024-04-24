@@ -142,24 +142,45 @@ li a:hover {
 }
 
 .blog-posts {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-content: center;
+  padding: 10px;
 }
 
 .substack-post-embed {
+  
 } 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .blog-posts {
-    display: block;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.subscribe {
-  justify-content: center;
+@media screen and (max-width: 500px) {
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
 }
 
+.subscribe-embed {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.subscribe-header h2 {
+  color: #222;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 16px;
+    border-top: 1px solid #EEE9E8;
+    font-weight: 600;
+    line-height: 43.2px; /* 180% */
+    margin-top: 5px;
+}
 
 footer {
     background-color: #f9f9f9;
