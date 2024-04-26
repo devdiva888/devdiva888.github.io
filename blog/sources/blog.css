@@ -147,11 +147,9 @@ li a:hover {
   gap: 20px;
   justify-content: center;
   padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-
-/* .substack-post-embed {
-  
-} */
 
 @media screen and (max-width: 850px) {
   .blog-posts {
@@ -162,6 +160,8 @@ li a:hover {
 @media screen and (max-width: 500px) {
   .blog-posts {
     grid-template-columns: 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
