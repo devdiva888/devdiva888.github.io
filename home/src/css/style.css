@@ -298,6 +298,11 @@ li a:hover {
     }
   }
 
+  .instagram-embed {
+    display: flex;
+    justify-content: center;
+  }
+
   footer {
     background-color: #f9f9f9;
     margin-top: 30px;
