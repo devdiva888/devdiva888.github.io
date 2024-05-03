@@ -262,6 +262,10 @@ li a:hover {
     min-height: 100%;
     object-fit: cover; /* Ensures the image covers the area without distortion */
   }
+
+  .highlight-item a {
+    text-align: center;
+  }
   
   .highlight-link {
     position: absolute;
