@@ -180,59 +180,89 @@ h3 {
     letter-spacing: 2px;
     margin-top: 5px;
     
-}
+} 
 
-.instagram-button {
-    display: inline-flex;
-    align-items: center;
-    background-color: #E1306C; /* Instagram pink */
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s;
+.highlights {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    margin-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   
-  .instagram-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 10px;
+  .highlight-item {
     position: relative;
+    width: calc(33.333% - 20px); /* Adjust based on desired spacing */
+    height: 0; /* Initial height to 0 */
+    padding-top: calc(33.333% - 20px); /* Same as width to maintain aspect ratio */
+    margin: 10px;
+    overflow: hidden; /* Ensures the image doesn't spill outside the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
   }
   
-  .instagram-icon::before,
-  .instagram-icon::after {
-    content: '';
+  .highlight-item img {
     position: absolute;
-    background-color: #E1306C;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+
+  .highlight-item a {
+    text-align: center;
   }
   
-  .instagram-icon::before {
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    border-radius: 1px;
-  }
+  .highlight-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* Change as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 15px; /* Adjust based on your design */
+    font-family: "Libre Baskerville";
+    text-transform: uppercase;
+     }
+
   
-  .instagram-icon::after {
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    border-radius: 1px;
+  .highlight-link:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
   }
-  
-  .instagram-button:hover {
-    background-color: #C13584;
+
+  @media (max-width: 768px) {
+    .highlight-item {
+      width: calc(50% - 20px); /* Adjust for two items per row on smaller screens */
+      padding-top: calc(50% - 20px); /* Adjust if using method 1 */
+    }
   }
-  
+
+  @media (max-width: 500px) {
+    .highlight-item {
+      width: 100%; /* One item per row on smaller screens */
+      padding-top: 100%; /* Maintain square aspect ratio */
+      margin: 5px 0; /* Adjust margin as needed */
+    }
+
+    .highlights {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 
 footer {
     background-color: #f9f9f9;
