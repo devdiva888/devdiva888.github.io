@@ -18,7 +18,6 @@ h4 {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: lowercase;
     margin-top: 10px;
 }
 
@@ -133,7 +132,7 @@ li a:hover {
 
 .hero {
     position: relative; /* Ensure the parent is positioned */
-    background: url('/IMG_9533.png') lightgray 0px 0px / cover no-repeat;
+    background: url('/sources/ysl-frontpage.jpg') lightgray 0px 0px / cover no-repeat;
     /* background-size: cover; is redundant due to / cover in the background shorthand */
     opacity: 1;
     background-position: center;
